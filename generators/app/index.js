@@ -122,11 +122,26 @@ module.exports = class extends Generator {
         // );
 
         const pkgJson = {
-            devDependencies: {
-                eslint: '^3.15.0'
-            },
+            // devDependencies: {
+            //     eslint: '^3.15.0'
+            // },
             dependencies: {
-                react: '^16.2.0'
+                '@craco/craco': '^5.9.0',
+                '@testing-library/jest-dom': '^5.14.1',
+                '@testing-library/react': '^12.0.0',
+                '@testing-library/user-event': '^13.2.1',
+                '@types/jest': '^27.0.1',
+                '@types/node': '^16.7.13',
+                '@types/react': '^17.0.20',
+                '@types/react-dom': '^17.0.9',
+                'antd-mobile': '^5.0.0-rc.9',
+                'craco-antd': '^1.19.0',
+                'craco-less': '^2.0.0',
+                react: '^17.0.2',
+                'react-dom': '^17.0.2',
+                'react-scripts': '5.0.0',
+                typescript: '^4.4.2',
+                'web-vitals': '^2.1.0'
             }
         };
         this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
